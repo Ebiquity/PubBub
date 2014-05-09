@@ -1,0 +1,14 @@
+{
+    "json_class": "Chef::Role",
+    "name": "pubbub",
+    "description": "Paper Bubbles Demo App",
+    "run_list": ["recipe[apache2]","recipe[pubbub]"],
+    "default_attributes": {
+        
+	 "pubbub": {
+            "server-name": "pubbub.test"
+        }
+
+    }
+}
+
